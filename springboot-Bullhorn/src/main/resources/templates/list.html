@@ -31,7 +31,7 @@
     
 	<div class="container">
 		<div th:replace="base :: header"></div>
-		<a href="/add">Add a Message</a>
+		<div th:replace="base :: navlinks"></div>
 	    <div th:each="message : ${messages}">
 	        <h2><span th:text="${message.content}"></span></h2>
 	        <span th:text="${message.sentby}"></span>
